@@ -52,6 +52,12 @@ html, body {
 .font-24{
     font-size: 24px !important;
 }
+.col-33{
+    width: 33.33333%;
+}
+.col-66{
+    width: 66.666666%;
+}
 .white-color{
     color: #fff !important;
 }
