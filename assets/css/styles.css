@@ -42,7 +42,12 @@ html, body {
 .padding-righleft-8{
     padding: 0px 8px !important;
 }
-
+.padding-righleft-16{
+    padding: 0px 16px !important;
+}
+.col-half{
+    width: 50%;
+}
 .col-25{
     width: 24.99999%;
 }
@@ -225,7 +230,7 @@ header{
     opacity: 0.7;
 }
 .social-icon{
-    font-size: 20px;
+    font-size: 24px;
 }
 .icon{
     color: #fff;
@@ -260,5 +265,39 @@ header{
 
 .hover-img:hover{
     opacity: 0.7;
+    cursor: pointer;
+}
+.contact-form{
+    margin-bottom: 16px;
+}
+
+
+.row-form{
+    width: 100;
+    display: flex;
+    margin: 0 -16px 8px -16px;
+    padding: 0px 8px;
+    box-sizing: inherit;
+
+}
+.row-form input{
+    padding: 12px;
+    width: 100%;
+}
+.input-mess{
+    width: 100%;
+    padding: 12px;
+
+}
+.send-btn{
+    padding: 13px 16px;
+    background-color: #000;
+    color: #fff;
+    border: none;
+    float: right;
+}   
+.send-btn:hover{
+    color: #000;
+    background: #ccc;
     cursor: pointer;
 }
