@@ -13,6 +13,7 @@
 }
 
 html, body {
+    position: relative;
     font-size: 15px;
     line-height: 1.8;
     font-family: "Lato", sans-serif;
@@ -65,6 +66,12 @@ html, body {
 }
 .white-color{
     color: #fff !important;
+}
+.oblique{
+    font-style: oblique !important; 
+}
+.justify{
+    text-align: justify;
 }
 .shadow {
     box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);
@@ -300,4 +307,63 @@ header{
     color: #000;
     background: #ccc;
     cursor: pointer;
+}
+
+.modal{
+    display: none;
+    position: fixed;
+    z-index: 2;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-color:rgba(0, 0, 0, 0.863);
+    align-items: center;
+    justify-content: center;
+    padding-top: 100px;
+}
+
+.modal__close-btn{
+    position: absolute;
+    top: 0;
+    right: 0;
+    color: #fff;
+    padding: 8px 18px;
+    float: right;
+    font-size: 18px;
+}
+.modal__close-btn:hover{
+    background-color: #ccc;
+    color: #000;
+    cursor: pointer;
+}
+.modal__container{
+    padding: 64px 0px;
+    text-align: center;
+}
+.detail-img{
+    font-size: 18px;
+    margin: 18px 0px ;
+    color: #fff;
+}
+
+.modal-img{
+    max-width: 100%;
+}
+
+.w3-animate-zoom {
+    animation:animatezoom 0.6s;
+}
+
+@keyframes animatezoom{
+    from{
+        transform:scale(0)
+    } 
+    to{
+        transform:scale(1)
+    }
+}
+
+.open{
+    display: flex;
 }
