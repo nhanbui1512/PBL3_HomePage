@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <link rel="stylesheet" href="./assets/css/styles.css">
+    <!-- <link rel="stylesheet" href="./assets/css/w3.css"> -->
     <!-- <link rel="stylesheet" href="./assets/css/responsive.css"> -->
     <link rel="stylesheet" href="./assets/fonts/themify-icons-font/themify-icons/themify-icons.css">
     <link rel="stylesheet" href="/assets/fonts/fontello-71dcf3ae/css/fontawesome-codes.css">
@@ -25,8 +26,9 @@
                 <a class="bar-item" href="#work"><i class="ti-layout-grid3"></i> portfolio</a>
                 <a class="bar-item" href="#contact"><i class="ti-email"></i> contact</a>
             </div>
+            <a onclick="document.getElementById('id01').style.display='block'" href="#" class="login-btn"><i class="login-icon fa-solid fa-arrow-right-to-bracket"></i>Login</a>
             
-            <a href="" class="search-btn"><i class="ti-search"></i></a>
+            <!-- <a href="" class="search-btn"><i class="ti-search"></i></a> -->
         </div>
 
         <header>
@@ -259,6 +261,36 @@
             <p class="margin-bottop-16">Powered by <a class="coppyright" href="">w3.css</a></p>
         </footer>
     </div>
+
+    <div id="id01" class="w3-modal">
+        <div class="w3-modal-content w3-card-4 w3-animate-zoom" style="max-width:600px">
+            <div onclick="document.getElementById('id01').style.display='none'" class="w3-modal-close-btn"><i class="fa-solid fa-xmark"></i></div>
+          <div class="center">
+            <img src="/assets/img/img_avatar4.png" alt="Avatar" style="width:30%" class="w3-circle login-img">
+          </div>
+    
+          <form class="w3-container" action="/action_page.php">
+            <div class="w3-section">
+              <label><b>Username</b></label>
+              <input class="w3-input w3-border w3-margin-bottom" type="text" placeholder="Enter Username" name="usrname" required>
+              <label><b>Password</b></label>
+              <input class="w3-input w3-border" type="text" placeholder="Enter Password" name="psw" required>
+              <button class="modal-login-btn" type="submit">Login</button>
+            </div>
+
+            <div class="form-remember">
+                <input class="w3-check" type="checkbox" checked="checked"> Remember me
+            </div>
+
+          </form>
+    
+          <div class="login-footer">
+            <button onclick="document.getElementById('id01').style.display='none'" type="button" class="cancel-btn">Cancel</button>
+            <span class="w3-right w3-padding w3-hide-small">Forgot <a href="#">password?</a></span>
+          </div>
+    
+        </div>
+      </div>
 
     <div id="modal01" class="modal js-modal" onclick="this.style.display = 'none'">
         <div class="modal__close-btn js-close-btn">
