@@ -344,6 +344,7 @@ html, body {
     padding: 0px 16px;
 }
 .w3-section{
+    width: 100%;
     display: flex;
     flex-direction: column;
     padding: 8px;
@@ -477,4 +478,56 @@ html, body {
 .form-order__close-btn:hover{
     background-color: #ccc;
     cursor: pointer;
+}
+.service-container{
+    padding: 16px 16px;
+    text-align: center;
+}
+.service-header{
+    font-weight: 300;
+    margin-bottom: 10px;
+}
+.service-detail{
+    padding: 18px 100px;
+    display: flex;
+
+}
+.service-detail__image{
+    flex: 1;
+    width: 50%;
+}
+.service-detail__descripsion{
+    flex: 1;
+}
+.service-detail__content{
+    text-align: justify;
+    padding: 0px 18px;
+}
+.service-detail__content-header1{
+    font-weight: 200;
+    text-align: center;
+}
+
+.service-detail__content-header2{
+    font-weight: 200;
+    text-align: center;
+    margin: 8px 0px;
+
+}
+
+.id03__modal-header{
+    display: flex;
+    justify-content: space-between;
+}
+.id03__modal-header h1 {
+    color: #f44336;
+    
+    margin-top: 23px;
+    margin-left: 23px;
+}
+
+.User-nav{
+    background-color: #fff;
+    list-style-type: none;
+    padding: 8px 20px;
 }

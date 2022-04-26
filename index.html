@@ -18,18 +18,21 @@
 </head>
 <body>
     <div id="main">
-
         <div class="bar shadow">
             <div class="bar-item-container">
                 <a class="bar-item" href="#"><i class=" bar-icon fa-solid fa-house"></i>Home</a>
                 <a class="bar-item" href="#rooms"><i class=" bar-icon fa-solid fa-bed"></i> Rooms</a>
-                <a class="bar-item" href="#"><i class=" bar-icon ti-layout-grid3"></i> About</a>
+                <a class="bar-item" href="#service-container"><i class=" bar-icon ti-layout-grid3"></i> Service</a>
                 <a class="bar-item" href="#"><i class=" bar-icon fa-solid fa-phone"></i> contact</a>
             </div>
+            <a class="login-btn">
+                <i class="fa-solid fa-user login-icon fa-arrow-right-to-bracket"></i>
+                Cá Nhân
+            </a>
             <a onclick="document.getElementById('id01').style.display='block'" class="login-btn"><i class="login-icon fa-solid fa-arrow-right-to-bracket"></i>Login</a>
-            
-            <!-- <a href="" class="search-btn"><i class="ti-search"></i></a> -->
+            <a onclick="document.getElementById('id03').style.display='block'" class="login-btn">Đăng Ký</a>
         </div>
+        
 
         <header class="header">
             <img class="header__image" src="./assets/img/workshop.jpg" alt="">
@@ -252,6 +255,40 @@
             
         </div>
 
+        <div id="service-container" class="service-container">
+            <h1 class="service-header">SERVICE</h1>
+
+            <div class="service-detail">
+                <img class="service-detail__image" src="./assets/img/best-type-of-swimming-pool-for-my-home_2.jpg" alt="">
+                <div class="service-detail__content">
+                    <h2 class="service-detail__content-header1">ROMAN SWIMMING POOL</h2>
+                    <h3 class="service-detail__content-header2">Features</h3>
+                    <p class="service-detail__content-detail">Our beautiful Roman style outdoor pool, including children pool, located on the 1st floor,and open daily from 6:00 AM to 8:00 PM. Towel are available at the pool. Please note that swimming in the pool is entirely at your own risk. Parens must supervise their children at all time. The pool is closed for cleaning after 8:00 PM   </p>
+                </div>
+            </div>
+
+            <div class="service-detail">
+                <div class="service-detail__content">
+                    <h2 class="service-detail__content-header1">FITNESS CENTER</h2>
+                    <h3 class="service-detail__content-header2">Healthy</h3>
+                    <p class="service-detail__content-detail">Location Annex Building - 1st Floor operation hours 6:00 AM - 9:00 PM. Free charge for our hotel guest. With a fully-equipped gym, free fitness roomfor member, you will easy to stay in shape while you're here </p>
+                </div>
+                <img class="service-detail__image" src="./assets/img/Gym-room-3dsmax-3d-model-2.jpg" alt="">
+
+            </div>
+
+
+            <div class="service-detail">
+                <img class="service-detail__image" src="./assets/img/tour-la-gi1.jpg" alt="">
+
+                <div class="service-detail__content">
+                    <h2 class="service-detail__content-header1">TOUR</h2>
+                    <h3 class="service-detail__content-header2">Features</h3>
+                    <p class="service-detail__content-detail">Nha Trang is endowed by nature with a template climate, beautiful natural scenery, and a rich history and culture. You just need to choose your descired dates and give us an idea of what you want to do and then let us design a unique and extraordinary adventure of a life time. If you need more infomation or wish to participate in any of the activities, please contact for us</p>
+                </div>
+
+            </div>
+        </div>
         
         <!-- footer  -->
         <footer id="footer" class="center white-color">
@@ -267,7 +304,7 @@
                 <a href="" class="icon"> <i class="fa-brands fa-twitter-square"></i></a>
                 <a href="" class="icon"> <i class="fa-brands fa-linkedin"></i></a>
             </div>
-            <p class="margin-bottop-16">Powered by <a class="coppyright" href="">NhanBui</a></p>
+            <!-- <p class="margin-bottop-16">Powered by <a class="coppyright" href="">NhanBui</a></p> -->
         </footer>
     </div>
 
@@ -275,7 +312,7 @@
         <div class="w3-modal-content w3-card-4 w3-animate-zoom" style="max-width:600px">
             <div onclick="document.getElementById('id01').style.display='none'" class="w3-modal-close-btn"><i class="fa-solid fa-xmark"></i></div>
           <div class="center">
-            <img src="./assets/img/img_avatar4.png" alt="Avatar" style="width:30%" class="w3-circle login-img">
+            <img src="./assets/img/img_avatar4.png" alt="Avatar" style="width:20%" class="w3-circle login-img">
           </div>
     
           <form class="w3-container" action="/action_page.php">
@@ -284,6 +321,7 @@
               <input class="w3-input w3-border w3-margin-bottom" type="text" placeholder="Enter Username" name="usrname" required>
               <label><b>Password</b></label>
               <input class="w3-input w3-border" type="password" placeholder="Enter Password" name="psw" required>
+              
               <button class="modal-login-btn" type="submit">Login</button>
             </div>
 
@@ -295,6 +333,44 @@
     
           <div class="login-footer">
             <button onclick="document.getElementById('id01').style.display='none'" type="button" class="cancel-btn">Cancel</button>
+            <span class="w3-right w3-padding w3-hide-small">Forgot <a href="#">password?</a></span>
+          </div>
+    
+        </div>
+    </div>
+
+    <div id="id03" class="w3-modal">
+        <div class="w3-modal-content w3-card-4 w3-animate-zoom" style="max-width:600px">
+
+            <div onclick="document.getElementById('id03').style.display='none'" class="w3-modal-close-btn"><i class="fa-solid fa-xmark"></i></div>
+
+          <!-- <div class="center">
+            <img src="./assets/img/img_avatar4.png" alt="Avatar" style="width:20%" class="w3-circle login-img">
+          </div> -->
+    
+          <form class="w3-container" action="/action_page.php">
+            <div class="w3-section">
+              <label class="w3-margin-top"><b>Username</b></label>
+              <input class="w3-input w3-border w3-margin-bottom" type="text" placeholder="Enter Username" name="usrname" required>
+              
+              <label><b>Email</b></label>
+              <input class="w3-input w3-border w3-margin-bottom" type="email" placeholder="Enter Email" name="usrname" required>
+
+              
+              <label><b>Password</b></label>
+              <input class="w3-input w3-border w3-margin-bottom" type="password" placeholder="Enter Password" name="psw" required>
+              
+
+              <label><b>Confirm Password</b></label>
+              <input class="w3-input w3-border" type="password" placeholder="Confirm Password" name="psw" required>
+              
+              <button class="modal-login-btn" type="submit">Đăng ký</button>
+            </div>
+
+          </form>
+    
+          <div class="login-footer">
+            <button onclick="document.getElementById('id03').style.display='none'" type="button" class="cancel-btn">Cancel</button>
             <span class="w3-right w3-padding w3-hide-small">Forgot <a href="#">password?</a></span>
           </div>
     
@@ -359,6 +435,14 @@
 
                     </div>
 
+                    <div class="check-container-info__item">
+                        <label for="">
+                            Chứng minh nhân dân
+                        </label>
+                        <input class="check-container-info__item-input" type="text" placeholder="Chứng minh nhân dân">
+
+                    </div>
+
                     <div class="padding-righleft-20">
                         <button class="form-order-send-btn">
                             SEND
@@ -372,7 +456,7 @@
         </div>
     </div>
 
-    
+
     <script>
         // const image_btns = document.querySelectorAll('.js-image-btn');
         // const modal = document.querySelector('.js-modal');
